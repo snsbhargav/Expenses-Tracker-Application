@@ -1,5 +1,0 @@
-package com.project.expensesTrackerBackend.Exception;
-
-public class ExceptionControllerAdvice {
-
-}

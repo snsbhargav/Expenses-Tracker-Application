@@ -1,5 +1,0 @@
-package com.project.expensesTrackerBackend.Exception;
-
-public class EXPENSE_ID_NOT_FOUND {
-
-}

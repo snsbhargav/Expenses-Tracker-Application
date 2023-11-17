@@ -1,5 +1,0 @@
-package com.project.expensesTrackerBackend.Service;
-
-public interface UserService {
-
-}

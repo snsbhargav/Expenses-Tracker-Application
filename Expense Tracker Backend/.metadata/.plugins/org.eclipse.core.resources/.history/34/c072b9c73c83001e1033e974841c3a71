@@ -1,5 +1,0 @@
-package com.project.expensesTrackerBackend.Exception;
-
-public interface USER_NOT_FOUND_EXCEPTION {
-
-}
