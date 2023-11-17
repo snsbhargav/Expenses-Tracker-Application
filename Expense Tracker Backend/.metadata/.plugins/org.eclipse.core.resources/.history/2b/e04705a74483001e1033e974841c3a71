@@ -1,0 +1,14 @@
+package com.project.expensesTrackerBackend.Repository;
+
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.project.expensesTrackerBackend.Entity.ExpensesEntity;
+
+@Repository
+public interface ExpensesRepository extends JpaRepository<ExpensesEntity, Long> {
+
+	List<ExpensesEntity> findByUserId(Long userId);
+
+}

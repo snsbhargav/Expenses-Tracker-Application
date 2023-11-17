@@ -1,0 +1,5 @@
+package com.project.expensesTrackerBackend.Entity;
+
+public class LimitsEntity {
+
+}

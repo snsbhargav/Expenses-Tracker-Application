@@ -1,0 +1,19 @@
+package com.project.expensesTrackerBackend.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ExpensesTrackerBackend.Model.UserModel;
+
+@Service
+public class UserService {
+	
+	@Autowired
+//	UserRepository userRepo;
+	
+	public String saveUser(UserModel userModel) {
+//		userRepo.save(userModel);
+		return "User Saved Successfully.";
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.project.expensesTrackerBackend.Entity;
+
+import com.project.expensesTrackerBackend.Enum.ExpenseType;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+public class ExpensesEntity {
+
+	//Expense name, Expensetype(food, entertainment etc), picture, location, amount, credit/debit, datetime, reciepts
+	private Long expenseId;
+	private String expenseName;
+	private String expense;
+	private ExpenseType expenseType;
+}

@@ -1,0 +1,38 @@
+package com.project.expensesTrackerBackend.Entity;
+
+import java.sql.Timestamp;
+
+import com.project.expensesTrackerBackend.Enum.ExpenseType;
+import com.project.expensesTrackerBackend.Enum.TransactionType;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.ManyToOne;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+public class ExpensesEntity {
+
+	//Expense name, Expensetype(food, entertainment etc), picture, location, amount, credit/debit, datetime, reciepts
+	private Long expenseId;
+	private Long userId;
+	private String expenseName;
+	private String expense;
+	//Add pictures
+	private ExpenseType expenseType;
+	private String location;
+	private TransactionType transactionType;
+	private Timestamp datetime;
+	
+	//Add receipts
+}

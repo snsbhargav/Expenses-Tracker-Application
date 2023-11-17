@@ -1,0 +1,13 @@
+package com.project.expensesTrackerBacked;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ExpensesTrackerBackend1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ExpensesTrackerBackend1Application.class, args);
+	}
+
+}

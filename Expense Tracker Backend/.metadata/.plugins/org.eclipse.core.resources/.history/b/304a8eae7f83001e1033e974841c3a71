@@ -1,0 +1,10 @@
+package com.project.expensesTrackerBackend.Enum;
+
+public enum ExpenseType {
+
+	FOOD("FOOD"), BILLS("BILLS"), ENTERTAINMENT("ENTERTAINMENT");
+
+	ExpenseType(String string) {
+		// TODO Auto-generated constructor stub
+	}
+}

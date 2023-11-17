@@ -1,0 +1,12 @@
+package com.project.expensesTrackerBackend.Service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.project.expensesTrackerBackend.Entity.LimitsEntity;
+
+public interface LimitsService {
+
+	public ResponseEntity<String> saveLimit(LimitsEntity limitsEntity);
+
+	public ResponseEntity<String> updateLimit(LimitsEntity limitsEntity);
+}

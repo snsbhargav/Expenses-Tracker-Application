@@ -1,0 +1,21 @@
+package com.project.expensesTrackerBackend.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.project.expensesTrackerBackend.Entity.LimitsEntity;
+import com.project.expensesTrackerBackend.Repository.LimitsRepository;
+
+@Service
+public class LimitsService {
+	
+	@Autowired
+	private LimitsRepository limitsRepository;
+
+	public ResponseEntity<String> saveLimit(LimitsEntity limitsEntity){
+		limitsRepository.save(limitsEntity);
+		return new ResponseEntity<String>("Limit set successfully.", HttpStatus.OK);
+	}
+}
